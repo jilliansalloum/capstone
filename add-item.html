@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" href="styles.css">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added Items</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Virtual Closet   <img class="closet" src="https://cdn-icons-png.flaticon.com/512/148/148466.png"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/add-item.html" class="navbar__links">Add an Item</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/search.html" class="navbar__links">Search Items</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main__content" >
+    </div>
+
+    <br>
+    <br>
+    <form action="add-item.html" method="POST" class="form-box">
+        <label>Company: </label>
+        <input class="form-labels"><br>
+        <label>Line: </label>
+        <input class="form-labels"><br>
+        <label>Season: </label>
+        <input class="form-labels"><br>
+        <label>Style (item name): </label>
+        <input class="form-labels"><br>
+        <label>Image URL: </label>
+        <input class="form-labels"><br>
+        <button>Add Item</button>
+    </form>
+        <div class="main">
+            <div class="main__container">
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
