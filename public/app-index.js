@@ -7,29 +7,13 @@ const menuLinks = document.querySelector('.navbar__menu')
 const allItemsDiv = document.querySelector('#all-items')
 
 
-const baseURL = 'http://localhost:3000'
+const baseURL = `http://localhost:3000`
 
 
 const itemsCallback = ({data : posts}) => displayItems(posts)
 const errCallback = err => console.log(err)
 
-
-// const seeAllBtn = document.getElementById("see-all")
-// console.log("Button Was Clicked!")
-// const getAll = () => {
-//     axios.get("http://localhost:3000/api/posts/")
-//     .then (res => {
-//         const data = res.data;
-//         alert(data);
-//     });
-// };
-
-
 const getPosts = () => axios.get(`${baseURL}/api/posts`).then(itemsCallback).catch(errCallback)
-
-
-
-
 
 
 

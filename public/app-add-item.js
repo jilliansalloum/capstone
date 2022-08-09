@@ -48,5 +48,9 @@ function submitHandler(e) {
     
 }
 
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+})
 
 form.addEventListener("submit", submitHandler)
