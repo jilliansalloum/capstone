@@ -6,6 +6,7 @@ const app = express()
 const { postItem } = require('./controller');
 
 const posts = [
+    { id: 1, brand:"Aritzia", style: "turtleneck", season:"winter", img:"https://aritzia.scene7.com/is/image/Aritzia/hi-res/f22_04_a03_103977_11420_on_a.jpg" },
     { id: 2, brand: 'Aritzia', style: 'Tank top', season: 'summer', img: 'https://aritzia.scene7.com/is/image/Aritzia/s22_01_a01_81266_1275_on_a?wid=900' },
     { id: 3, brand: "Aritzia", style: "leggings", season: "winter", img: "https://aritzia.scene7.com/is/image/Aritzia/s22_19_a06_85022_17232_on_a?wid=900" }
 ]
