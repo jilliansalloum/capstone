@@ -36,18 +36,45 @@
     <br>
     <form action="add-item.html" method="POST" id="myForm" class="form-box">
         <label>Company: </label>
-        <input class="form-labels" input="text"><br>
+        <input
+            type="text"
+            id="company"
+            class="form-labels"
+            placeholder="What's the company's name?"/>
         <label>Line: </label>
-        <input class="form-labels" input="text"><br>
+        <input
+            type="text"
+            id="line"
+            class="form-labels"
+            placeholder="What is the line name?"/>
         <label>Season: </label>
-        <input class="form-labels" input="text"><br>
+        <input
+            type="text"
+            id="season"
+            class="form-labels"
+            placeholder="What season is it from?"/>
         <label>Style (item name): </label>
-        <input class="form-labels" input="text"><br>
+        <input
+            type="text"
+            id="style"
+            class="form-labels"
+            placeholder="What's the item's name?"/>
         <label>Image URL: </label>
-        <input class="form-labels" input="text"><br>
-        <button type="submit">Add Item</button>
+        <input
+            type="text"
+            id="img"
+            class="form-labels"
+            placeholder="Paste an image URL"/>
+        <button type="submit" id="add-item-btn" >Add Item</button>
     </form>
-    <script>
+    <!-- <form action="add-item.html" method="POST" id="myForm" class="form-box">
+        <input class="form-labels" input="text"><br>
+        <input class="form-labels" input="text"><br>
+        <input class="form-labels" input="text"><br>
+        <input class="form-labels" input="text"><br>
+        <input class="form-labels" input="text"><br>
+    </form> -->
+    <!-- <script>
         const myForm = document.getElementById('myForm');
 
         myForm.addEventListener('submit', function (e) {
@@ -66,12 +93,16 @@
                 console.log(error)
             })
         })
-    </script>
+    </script> -->
+
+    
+
         <div class="main">
             <div class="main__container">
             </div>
         </div>
-
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

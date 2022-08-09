@@ -51,9 +51,23 @@ module.exports = {
         res.status(200).send(items);
         globalId++
     },
+    postItem: (req,res) => {
+        const newItems = {id: globalId, 
+        company,
+        line,
+        season,
+        style,
+        img
+    }
+
+        items.push(newItem);
+        res.status(200).send(items);
+        globalId++
+    },
     searchItem: (req,res) => {
         
     }
 
 }
 
+//must declare the variabel for items = ie require teh database being used
