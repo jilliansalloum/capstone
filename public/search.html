@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" href="styles.css">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added Items</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Virtual Closet   <img class="closet" src="https://cdn-icons-png.flaticon.com/512/148/148466.png"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/public/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/public/add-item.html" class="navbar__links">Add an Item</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/public/search.html" class="navbar__links">Search Items</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main__content" >
+    </div>
+
+    <br>
+    <br>
+    <form action="search.html" method="POST" class="form-box">
+        <div class="search-bar">
+            <label style="padding-right: 10px;">Search: </label>
+            <input class="search-form" type="text" style="border-radius: 10px 0px 0px 10px;">
+            <input type="image" id="search-icon-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqeoHj7R5Zl9U_NP4_3NRMgLUBo1xMqsOPZA&usqp=CAU">
+            <!-- <button type="button" id="search-icon"> <img id="search-icon-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqeoHj7R5Zl9U_NP4_3NRMgLUBo1xMqsOPZA&usqp=CAU"/></button> -->
+        </div>
+        <br>
+            <div class="form-labels">
+                <label>Sort by: </label>
+                <label for="style" id="radios">Style </label>
+                <input type="radio" id="style" name="fav_language" value="style">
+                <label for="season" id="radios">Season </label>
+                <input type="radio" id="season" name="fav_language" value="season">
+                <label for="line" id="radios">Line </label>
+                <input type="radio" id="line" name="fav_language" value="line">
+                <label for="company" id="radios">Company</label>
+                <input type="radio" id="company" name="fav_language" value="company"><br>
+            </div>
+        <button class="add-button">Add Item</button>
+    </form>
+        <div class="main">
+            <div class="main__container">
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

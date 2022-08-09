@@ -18,13 +18,13 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Home</a>
+                    <a href="/public/index.html" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/add-item.html" class="navbar__links">Add an Item</a>
+                    <a href="/public/add-item.html" class="navbar__links">Add an Item</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/search.html" class="navbar__links">Search Items</a>
+                    <a href="/public/search.html" class="navbar__links">Search Items</a>
                 </li>
             </ul>
         </div>
@@ -34,19 +34,39 @@
 
     <br>
     <br>
-    <form action="add-item.html" method="POST" class="form-box">
+    <form action="add-item.html" method="POST" id="myForm" class="form-box">
         <label>Company: </label>
-        <input class="form-labels"><br>
+        <input class="form-labels" input="text"><br>
         <label>Line: </label>
-        <input class="form-labels"><br>
+        <input class="form-labels" input="text"><br>
         <label>Season: </label>
-        <input class="form-labels"><br>
+        <input class="form-labels" input="text"><br>
         <label>Style (item name): </label>
-        <input class="form-labels"><br>
+        <input class="form-labels" input="text"><br>
         <label>Image URL: </label>
-        <input class="form-labels"><br>
-        <button>Add Item</button>
+        <input class="form-labels" input="text"><br>
+        <button type="submit">Add Item</button>
     </form>
+    <script>
+        const myForm = document.getElementById('myForm');
+
+        myForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('form.php', {
+                method: 'post',
+                body: formData
+            }).then(function (response) {
+                return response.text();
+            }).then(function (text) {
+                console.log(text);
+            }).catch(function (error) {
+                console.log(error)
+            })
+        })
+    </script>
         <div class="main">
             <div class="main__container">
             </div>
