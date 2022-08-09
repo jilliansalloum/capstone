@@ -25,7 +25,7 @@ app.get('/', (req,res) => {
 
 app.post('/api/posts', (req,res) => {
     const post = {
-        id: posts.length +1,
+        id: globalId,
         brand: req.body.brand,
         style: req.body.style,
         season: req.body.season,
@@ -51,7 +51,17 @@ app.get('/posts/brand', (req,res) => {
     res.send(brand);
 })
 
-app.listen(5000, () => console.log('Server running on 5000'))
+app.delete('/api/posts/:id', (req,res) => {
+    const post = post.find( c => c.id === parseInt(req.params.id));
+    if (!post) res.status(404).send('the post was deleted')
+
+    const index = posts.index.indexOf(post);
+    posts.splice(index, 1);
+
+    res.send(post);
+});
+
+app.listen(3000, () => console.log('Server running on 3000'))
 
 
 

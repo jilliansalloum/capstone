@@ -1,4 +1,4 @@
-// const mainContainer = document.querySelector('#main_container')
+const mainContainer = document.querySelector('.container')
 // const form = document.getElementById('myForm')
 
 const menu = document.querySelector('#mobile-menu')
@@ -7,25 +7,25 @@ const menuLinks = document.querySelector('.navbar__menu')
 const allItemsDiv = document.querySelector('#all-items')
 
 
-const baseURL = `http://localhost:3000'
-`
+const baseURL = 'http://localhost:3000'
+
+
 const itemsCallback = ({data : posts}) => displayItems(posts)
 const errCallback = err => console.log(err)
 
 
-const seeAllBtn = document.getElementById("see-all")
-console.log("Button Was Clicked!")
-const getAll = () => {
-    axios.get("http://localhost:3000/api/posts/")
-    .then (res => {
-        const data = res.data;
-        alert(data);
-    });
-};
+// const seeAllBtn = document.getElementById("see-all")
+// console.log("Button Was Clicked!")
+// const getAll = () => {
+//     axios.get("http://localhost:3000/api/posts/")
+//     .then (res => {
+//         const data = res.data;
+//         alert(data);
+//     });
+// };
 
-seeAllBtn.addEventListener('click',getAll)
 
-const getPosts = () => axios.get(baseURL).then(itemsCallback).catch(errCallback)
+const getPosts = () => axios.get(`${baseURL}/api/posts`).then(itemsCallback).catch(errCallback)
 
 
 
@@ -34,13 +34,13 @@ const getPosts = () => axios.get(baseURL).then(itemsCallback).catch(errCallback)
 
 
 function createItemCard(post){
+    console.log(post)
     const itemCard = document.createElement('div')
     itemCard.classList.add('card')
-    itemCard.innerHTML = `<img alt='item image' src="${post.img}" class="add-item-img"/>
-    <p class="brand">${post.brand}</p> 
-    <p class="style">${post.style}</p> 
-    <p class="season">${post.season}</p>
-    <img class="img" src="${post.img}"/>
+    itemCard.innerHTML = `<img alt='item image' src="${post.img}" class="card-image"/>
+    <h2 class="brand">${post.brand}</h2> 
+    <h2 class="style">${post.style}</h2> 
+    <h2 class="season">${post.season}</h2>
     `
     mainContainer.appendChild(itemCard)
 }
@@ -59,10 +59,10 @@ getPosts()
 
 
 
-// menu.addEventListener('click', function() {
-//     menu.classList.toggle('is-active');
-//     menuLinks.classList.toggle('active');
-// })
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+})
 
 // const addItem = (post) => {
 //     return `
