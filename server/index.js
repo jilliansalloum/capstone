@@ -26,3 +26,6 @@ app.delete('/api/posts/:id', deleteItem);
 app.listen(3000, () => console.log('Server running on 3000'))
 
 
+app.get('/', function(req,res) {
+    res.sendFile(path.join(__dirname, '.../index.html'))
+})
