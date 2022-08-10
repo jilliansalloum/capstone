@@ -45,6 +45,7 @@ module.exports = {
         res.status(200).send(filtered)
     },
     createPost: (req,res) => {
+        let globalId = 22
         const post = {
             id: globalId,
             brand: req.body.brand,
