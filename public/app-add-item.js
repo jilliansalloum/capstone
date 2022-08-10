@@ -3,7 +3,6 @@ const form = document.getElementById('myForm')
 
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
-// const seeAllBtn = document.querySelector('#see-all')
 
 const addItemBtn = document.getElementById("add-item-btn")
 

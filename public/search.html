@@ -32,12 +32,11 @@
     <div class="main__content" >
     </div>
     <p style="font-size:larger; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 300; margin: 30px; text-align: center;"> Here you can search the products you have added.<br> Use this tool to find some inspiration for a cute summer outfit,<br> or look through all your dresses at once!</p>
-    <form action="search.html" method="POST" class="searchform-box">
+    <form class="searchform-box">
         <div class="search-bar">
             <label style="padding-right: 10px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:600;">Search: </label>
             <input class="searchform" type="text" style="border-radius: 10px 0px 0px 10px;">
             <input type="image" id="search-icon-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqeoHj7R5Zl9U_NP4_3NRMgLUBo1xMqsOPZA&usqp=CAU">
-            <!-- <button type="button" id="search-icon"> <img id="search-icon-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqeoHj7R5Zl9U_NP4_3NRMgLUBo1xMqsOPZA&usqp=CAU"/></button> -->
         </div>
         <br>
             <div class="form-labels">
@@ -47,13 +46,17 @@
                 <label for="season" id="radios" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:400;">Season </label>
                 <input type="radio" id="season" name="fav_language" value="season" class="searchradio">
                 <label for="company" id="radios" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:400;">Brand </label>
-                <input type="radio" id="brand" name="fav_language" value="company" class="searchradio"><br>
+                <input type="radio" id="brand" name="fav_language" value="brand" class="searchradio"><br>
             </div>
     </form>
         <div class="main">
             <div class="main__container">
             </div>
         </div>
+
+        <template>
+            <section class="container"><section>
+        </template data-search-template>
         <section class="container">
     
         </section>
@@ -70,6 +73,7 @@
         <br>
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="utils.js"></script>
 
     <script src="app-search.js"></script>
 </body>

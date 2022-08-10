@@ -7,7 +7,7 @@
 
 .navbar {
     background: #937D64;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +222,7 @@
     flex-wrap: wrap;
     text-align: center;
     border-radius: 4px;
-    background: url('https://www.commercialwalldecor.com/Images/product/luxe-linen-ivory-silk-qydo-l.jpg');
+    background: url('https://media.istockphoto.com/photos/suede-leather-texture-picture-id183422344?b=1&k=20&m=183422344&s=170667a&w=0&h=K0eWfiX_27UpjcyWOZJFsm2-a2Z_Q6f22cZWDrYcdi0=');
 }
 
 .form-labels {
