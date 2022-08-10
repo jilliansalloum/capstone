@@ -1,33 +1,31 @@
-//havent started working on this feature yet!!//
-
+function submitsearchHandler(e) {
+    e.preventDefault();
+    let searchradio = document.querySelector(".searchradio");
+    let searchform = document.querySelector(".searchform");
+    axios.get(`/api/search.html?searchradio=${searchradio.value}&searchform=${searchform.value}`,).then(itemsCallback).catch(errCallback);
+    searchradio.value = "";
+    searchform.value = "";
+  }
 
 // const mainContainer = document.querySelector('#main_container')
 // const form = document.getElementById('myForm')
 
-// const menu = document.querySelector('#mobile-menu')
-// const menuLinks = document.querySelector('.navbar__menu')
-// // const seeAllBtn = document.querySelector('#see-all')
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__menu')
+
 // const allItemsDiv = document.querySelector('#all-items')
 
 // const addItemBtn = document.getElementById("add-item-btn")
+const searchBtn = document.getElementById("search-button")
 
-// const baseURL = `http://localhost:3000'
-// `
-// const itemsCallback = ({data : posts}) => displayItems(posts)
-// const errCallback = err => console.log(err)
+const baseURL = `http://localhost:3000`
+
+const itemsCallback = ({data : posts}) => displayItems(posts)
+const errCallback = err => console.log(err)
 
 
-// const seeAllBtn = document.getElementById("see-all")
-// console.log("Button Was Clicked!")
-// const getAll = () => {
-//     axios.get("http://localhost:3000/api/posts/")
-//     .then (res => {
-//         const data = res.data;
-//         alert(data);
-//     });
-// };
+form.addEventListener("submit", submitsearchHandler);
 
-// seeAllBtn.addEventListener('click',getAll)
 
 // const getPosts = () => axios.get(baseURL).then(itemsCallback).catch(errCallback)
 // const postItem = body => axios.post(baseURL, body).then(itemsCallback).catch(errCallback)
