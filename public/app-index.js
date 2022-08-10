@@ -3,7 +3,6 @@ const mainContainer = document.querySelector('.container')
 
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
-// const seeAllBtn = document.querySelector('#see-all')
 const allItemsDiv = document.querySelector('#all-items')
 
 

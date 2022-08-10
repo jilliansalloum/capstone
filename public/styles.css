@@ -203,14 +203,26 @@
 }
 
 .form-box {
-    width: 50%;
+    width: 40%;
     height: 80%;
     background: #CDC2B6;
     padding: 30px;
     margin: auto;
     flex-wrap: wrap;
     text-align: center;
-
+    border-radius: 4px;
+    background: url('https://media.istockphoto.com/photos/beige-silk-background-picture-id171250699?b=1&k=20&m=171250699&s=170667a&w=0&h=W7dR0EuP1xd8NDhOf2tUF3XfoONdibhNd4xVw3HZUkQ=');
+}
+.searchform-box {
+    width: 40%;
+    height: 80%;
+    background: #CDC2B6;
+    padding: 30px;
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 4px;
+    background: url('https://www.commercialwalldecor.com/Images/product/luxe-linen-ivory-silk-qydo-l.jpg');
 }
 
 .form-labels {
@@ -326,3 +338,13 @@
     flex: 33.33%;
     padding: 5px;
   }
+
+  .row2 {
+    display: flex;
+  }
+  
+  .column2 {
+    flex: 25%;
+    padding: 5px;
+  }
+

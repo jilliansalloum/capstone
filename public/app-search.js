@@ -1,3 +1,28 @@
+const mainContainer = document.querySelector('.container')
+// const form = document.getElementById('myForm')
+
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__menu')
+const allItemsDiv = document.querySelector('#all-items')
+
+
+const baseURL = `http://localhost:3000`
+
+const itemsCallback = ({data : posts}) => displayItems(posts)
+const errCallback = err => console.log(err)
+
+const searchBtn = document.getElementById("search-button")
+form.addEventListener("submit", submitsearchHandler);
+
+const getPosts = () => axios.get(`${baseURL}/api/posts`).then(itemsCallback).catch(errCallback)
+
+
+function displayItems(arr) {
+    mainContainer.innerHTML = ``
+    for (let i = 0; i < arr.length; i++){
+        createItemCard(arr[i])
+    }
+}
 function submitsearchHandler(e) {
     e.preventDefault();
     let searchradio = document.querySelector(".searchradio");
@@ -6,27 +31,6 @@ function submitsearchHandler(e) {
     searchradio.value = "";
     searchform.value = "";
   }
-
-// const mainContainer = document.querySelector('#main_container')
-// const form = document.getElementById('myForm')
-
-const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar__menu')
-
-// const allItemsDiv = document.querySelector('#all-items')
-
-// const addItemBtn = document.getElementById("add-item-btn")
-const searchBtn = document.getElementById("search-button")
-
-const baseURL = `http://localhost:3000`
-
-const itemsCallback = ({data : posts}) => displayItems(posts)
-const errCallback = err => console.log(err)
-
-
-form.addEventListener("submit", submitsearchHandler);
-
-
 // const getPosts = () => axios.get(baseURL).then(itemsCallback).catch(errCallback)
 // const postItem = body => axios.post(baseURL, body).then(itemsCallback).catch(errCallback)
 // const deleteItem = id => axios.delete(`${baseURL}/${id}`).then(itemsCallback).catch(errCallback)
