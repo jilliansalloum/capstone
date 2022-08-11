@@ -23,9 +23,12 @@ app.get('/api/search/:searchCategory/:searchTerm', searchByCategory)
 
 app.delete('/api/posts/:id', deleteItem);
 
-app.listen(3000, () => console.log('Server running on 3000'))
+// app.listen(3000, () => console.log('Server running on 3000'))
 
+
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log(`up on ${port}`))
 
 app.get('/', function(req,res) {
-    res.sendFile(path.join(__dirname, '.../index.html'))
+    res.sendFile(path.join(__dirname, '.../public/index.html'))
 })
