@@ -30,5 +30,7 @@ const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`up on ${port}`))
 
 app.get('/', function(req,res) {
-    res.sendFile(path.join(__dirname, '.../public/index.html'))
+    res.sendFile(path.join(__dirname, '.../public/index.html')),
+    res.sendFile(path.join(__dirname, '.../public/add-item.html')),
+    res.sendFile(path.join(__dirname, '.../public/search.html'))
 })
