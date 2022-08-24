@@ -14,17 +14,14 @@ app.get('/', (req,res) => {
 })
 
 let globalId = 22
-app.post('/api/posts', createPost)
 
+app.post('/api/posts', createPost)
 
 app.get('/api/posts', getItems)
 
 app.get('/api/search/:searchCategory/:searchTerm', searchByCategory)
 
 app.delete('/api/posts/:id', deleteItem);
-
-// app.listen(3000, () => console.log('Server running on 3000'))
-
 
 const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`up on ${port}`))

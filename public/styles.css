@@ -78,29 +78,6 @@
     width: 100%;
 }
 
-/* do i need a button in my header? if i do then i can use this. remember i havent actually used a class=button yet
- 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    color: #fff;
-} 
-
-.button:hover {
-    background: #4837ff;
-    transition: all 0.3s ease;
-}
-*/
-
 .navbar__links:hover {
     color: #E6E1DB;
     transition: all 0.3s ease;
@@ -173,16 +150,6 @@
     .navbar__btn {
         padding-bottom: 2rem;
     }
-
-    /*again not sure if i want a button or not iin navbar
-     .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    } */
 
     .navbar__toggle .bar {
         display: block;
@@ -304,9 +271,6 @@
     
 }
 
-/* .card-1 {
-    background-image: url('');
-} */
 
 .card h2 {
     padding: 4px;

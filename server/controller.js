@@ -4,7 +4,7 @@ const posts = [
     { id: 3, brand: "Aritzia", style: "leggings", season: "winter", img: "https://aritzia.scene7.com/is/image/Aritzia/s22_19_a06_85022_17232_on_a?wid=900" },
     { id: 4, brand: "Aritzia", style: "pegu skirt", season: "fall", img: "https://aritzia.scene7.com/is/image/Aritzia/f22_01_a07_79658_27359_on_a?wid=900" },
     { id: 5, brand: "Aritzia", style: "bodysuit", season: "spring", img: "https://aritzia.scene7.com/is/image/Aritzia/large/f22_01_a01_81856_27359_on_a.jpg" },
-    { id: 6, brand: "Aritzia", style: "jeans", season: "winter", img: "https://aritzia.scene7.com/is/image/Aritzia/large/s22_10_a06_77926_19445_on_a.jpg" },
+    { id: 6, brand: "Aritzia", style: "jeans", season: "winter", img: "https://aritzia.scene7.com/is/image/Aritzia/large/f22_98_a06_104301_28204_on_b.jpg" },
     { id: 7, brand: "Forever21", style:"hat", season:"summer", img:"https://www.cuyana.com/dw/image/v2/BDQQ_PRD/on/demandware.static/-/Sites-master-catalog-cuyana/default/dw55c66231/pdp_white_hero_900x900_panamahat_black_hero_9142_3.jpg?sw=1600"},
     { id: 8, brand: "Aritzia", style:"dress pants", season:"winter", img:"https://s7d9.scene7.com/is/image/Aritzia/fa22-wk1-clp-introtofall-pt1-c?wid=900"},
     { id: 9, brand: "Aritzia", style:"overalls", season:"fall", img:"https://aritzia.scene7.com/is/image/Aritzia/large/s22_10_a08_95997_24419_on_a.jpg"},
