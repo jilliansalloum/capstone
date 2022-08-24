@@ -13,7 +13,6 @@ app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
-let globalId = 22
 
 app.post('/api/posts', createPost)
 
