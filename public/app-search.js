@@ -1,4 +1,4 @@
-const mainContainer = document.querySelector('.container')
+const mainContainer1 = document.querySelector('.container')
 
 const baseURL = `http://localhost:3000`
 
