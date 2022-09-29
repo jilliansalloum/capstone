@@ -13,8 +13,4 @@ getPosts()
 
 
 
-// menu1.addEventListener('click', function() {
-//     menu1.classList.toggle('is-active');
-//     menu1Links.classList.toggle('active');
-// })
 
